@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsHub - TimeLine</title>
+  <link rel="stylesheet" href="timelinestyle.css">
+ <style>
+  /* 전체 스타일 */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+  
+/* 헤더 스타일 */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+  
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  A:link { color: white; text-decoration:none;}
+  A:visited { color: white; text-decoration:none;}
+  A:active { color: white; text-decoration:none;}
+  A:hover { color: yellow;}
+}
+  
+/* 메인 스타일 */
+main {
+  padding: 20px;
+}
+  
+.timeline {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+  
+.timeline ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+  
+.timeline li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+  
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  z-index: 1;
+}
+  
+.timeline-icon i {
+  font-size: 18px;
+}
+  
+.timeline-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-left: 30px;
+}
+  
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #007;
+}
+
+.timeline-content p {
+  A:link { color: black; text-decoration:none;}
+  A:visited { color: black; text-decoration:none;}
+  A:active { color: black; text-decoration:none;}
+  A:hover { background-color: gray;}
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #f8f9fa;
+  padding: 40px;
+  text-align: center;
+}
+    
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+ </style>
+
+</head>
+<body>
+  <header>
+    <h1><a href="main_page.html">TimeLine</a></h1>
+  </header>
+  <main>
+    <section class="timeline">
+      <ul>
+        <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 1월 11일</h3>
+              <p class="headline">미국 증권거래위원회, 비트코인 현물 ETF 상장 승인</p>
+              <p><a href="https://imnews.imbc.com/news/2024/world/article/6561386_36445.html" target="_blank">더 알아보기</a></p>
+            </div>
+        </li>
+        <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 1월 15일</h3>
+            <p class="headline">지난해 전국 집값 3.56% 하락…서울도 1.95% 하락</p>
+            <p><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7866346&ref=A" target="_blank">더 알아보기</a></p>
+          </div>
+        </li>
+        <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 1월 18일</h3>
+              <p class="headline">AI로 언어장벽 허물다...13개 언어 실시간 통역</p>
+              <p><a href="https://www.fnnews.com/news/202401171417092238" target="_blank">더 알아보기</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 2월 1일</h3>
+              <p class="headline">정부 "10년 후 의사 1.5만명 부족…내년부터 의대 증원"</p>
+              <p><a href="https://www.hankyung.com/article/202402016795i" target="_blank">더 알아보기</a></p>
+            </div>
+        </li>
+        <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 2월 5일</h3>
+            <p class="headline">"칠레 산불에 사망·실종 최소 260여명"...역대급 참사</p>
+            <p><a href="https://www.mbn.co.kr/news/world/5000473" target="_blank">더 알아보기</a></p>
+          </div>
+        </li>
+        <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 2월 14일</h3>
+              <p class="headline">'재벌 3세 사칭 30억 사기' 전청조 1심서 징역 12년</p>
+              <p><a href="https://www.chosun.com/national/national_general/2024/02/14/T6Q3NSKB2RDBHMKKEJZ3P6CHLA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">더 알아보기</a></p>
+            </div>
+        </li>
+        <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 3월 4일</h3>
+            <p class="headline">전국 157개 초등학교...신입생 없어 오늘 입학식 못 열었다</p>
+            <p><a href="https://magazine.hankyung.com/business/article/202403046190b" target="_blank">더 알아보기</a></p>
+          </div>
+        </li>
+        <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 3월 6일</h3>
+              <p class="headline">"헉 소리 나는 과일값"…소비자물가 다시 3%대로 상승</p>
+              <p><a href="https://www.newscape.co.kr/news/articleView.html?idxno=100544" target="_blank">더 알아보기</a></p>
+            </div>
+         </li>
+         <li>
+            <div class="timeline-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>2024년 3월 14일</h3>
+              <p class="headline">챗GPT 탑재한 휴머노이드 로봇, 실제 사람처럼 일하고 말도 더듬어</p>
+              <p><a href="https://www.sedaily.com/NewsView/2D6MUGI3P2" target="_blank">더 알아보기</a></p>
+            </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 3월 26일</h3>
+            <p class="headline">도심 한복판서 타조가 ‘껑충껑충’…‘타돌이’ 탈출 이유는?</p>
+            <p><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=7923709&ref=A" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 4월 2일</h3>
+            <p class="headline">"이스라엘, 시리아 이란 영사관 폭격...고위 간부 사망"</p>
+            <p><a href="https://www.ytn.co.kr/_ln/0104_202404020146295159" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 4월 11일</h3>
+            <p class="headline">보궐선거 3곳 모두 민주당 승리...경기도의회 '여야 동수' 깨졌다</p>
+            <p><a href="https://www.ytn.co.kr/_ln/0101_202404111305498810" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 4월 14일</h3>
+            <p class="headline">혼자 치킨값 올리던 교촌, 2등마저 뺏겼다… '빅3' 또 순위 변동</p>
+            <p><a href="https://www.chosun.com/economy/economy_general/2024/04/13/OJSS4QDZHFFQFKZCL7ZRZFRZAE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 4월 22일</h3>
+            <p class="headline">하이브, '뉴진스' 소속사 대표 등 감사 착수</p>
+            <p><a href="https://www.newsis.com/view/?id=NISX20240422_0002708155&cID=10601&pID=10600" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 5월 8일</h3>
+            <p class="headline">"한 대 피우러 가야지?" 근무 중 담배, 근로시간 포함?</p>
+            <p><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007640160&plink=ORI&cooper=NAVER" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 5월 17일</h3>
+            <p class="headline">김밥 등 외식비 또 올라…냉면 한 그릇 1만2천원 육박</p>
+            <p><a href="https://www.yna.co.kr/view/AKR20240516155151030?input=1195m" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+         <li>
+          <div class="timeline-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>2024년 5월 29일</h3>
+            <p class="headline">군, 북한 '대남전단' 추정 풍선 10여개 식별...오물 포착</p>
+            <p><a href="https://www.ytn.co.kr/_ln/0101_202405290053522070" target="_blank">더 알아보기</a></p>
+          </div>
+         </li>
+       </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Introduction to AI Programming Project</p>
+  </footer>
+</body>
+</html>
+
+
